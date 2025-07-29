@@ -17,4 +17,6 @@ shellcode.90-60.s # chmod + exit
 
 ## 📁 Malware Directory
 
-TODO
+- linux directory
+
+    - 📁 keyloggers
