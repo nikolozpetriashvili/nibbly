@@ -2,5 +2,5 @@
 explained.md
 nibbly-venv/
 dev/
-.details.md
-test/
+**/details.md
+**/test/
