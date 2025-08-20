@@ -22,6 +22,6 @@ shellcode.90-60.s # chmod + exit
     - 📁 keyloggers
     - 📁 tunneling
 
-- win direcotry
+- win directory
 
     - 📁 hta
