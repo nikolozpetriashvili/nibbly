@@ -1,6 +1,6 @@
 # Nibbly
 
-Personal collection of custom shellcodes and malware written by me. This repository is part of my learning process in binary exploitation and malware development. All content is written from scratch for educational and research purposes only.
+Playing around and experimenting
 
 ## 📁 Shellcodes Directory
 
